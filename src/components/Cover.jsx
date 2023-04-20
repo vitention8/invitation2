@@ -74,7 +74,7 @@ export function Cover() {
       console.log(error);
     }
   };
-  const [bank, setBank] = useState("Ardilla Ika Putri (BCA)");
+  const [bank, setBank] = useState();
   const [dataGift, setDataGift] = useState({
     name: "",
     nominal: "",
@@ -150,6 +150,7 @@ export function Cover() {
 
   useEffect(() => {
     AOS.init({ duration: 2000 });
+    setBank("Ardilla Ika Putri (BCA)")
   }, []);
 
   const [isVisible, setIsVisible] = useState(true);
@@ -170,6 +171,7 @@ export function Cover() {
          setIsVisible(true);
     }
   };
+  console.log(bank)
   return (
     <div>
       <audio id="idAudio">
