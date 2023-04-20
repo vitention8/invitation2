@@ -271,7 +271,7 @@ export function Cover() {
                 </div>
               </div>
               <div className="image-countdown">
-                <img src={bridegroom} width="190px" height="190px" />
+                <img src={bridegroom} width="190px" height="auto" />
               </div>
             </div>
           </div>
