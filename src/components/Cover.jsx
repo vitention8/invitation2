@@ -241,7 +241,6 @@ export function Cover() {
         <img src={flower2} className="img-bottom" />
         <img src={flower3} className="img-bottom" />
       </div>
-      {cover === false && (
         <div id="section-1">
           <div className="content">
             <div className="border">
@@ -271,20 +270,19 @@ export function Cover() {
                   </div>
                 </div>
               </div>
-              <div className="image-countdown" data-aos="fade-up">
-                <img src={bridegroom} width="190px" height="auto" />
+              <div className="image-countdown">
+                <img src={bridegroom} width="190px" height="190px" />
               </div>
             </div>
           </div>
         </div>
-      )}
 
       <div id="section-2">
         <div className="content">
           <div className="border">
             <p>Maha suci Allah, yang telah menciptakan makhluknya berpasang-pasangan.Ya Allah semoga Ridho-Mu tercurah mengiringi pernikahan kami</p>
             <div className="bingkai">
-              <div data-aos="fade-up-right">
+              <div >
                 <div className="bg-image-bridegroom man">
                   <div className="man-card">
                     <img src={flowerMan} className="flower-man" />
@@ -298,7 +296,7 @@ export function Cover() {
               </div>
 
               <h3>&</h3>
-              <div data-aos="fade-down-left">
+              <div >
                 <div className="bg-image-bridegroom woman">
                   <div className="woman-card">
                     <img src={flowerWoman} className="flower-woman" />
