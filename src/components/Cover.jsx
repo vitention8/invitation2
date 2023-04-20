@@ -152,8 +152,24 @@ export function Cover() {
     AOS.init({ duration: 2000 });
   }, []);
 
-  console.log(bank)
-
+  const [isVisible, setIsVisible] = useState(true);
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () =>
+       window.removeEventListener("scroll", listenToScroll);
+  }, [])
+  const listenToScroll = () => {
+    let heightToHideFrom = 1000;
+    const winScroll = document.body.scrollTop ||
+        document.documentElement.scrollTop;
+  
+    if (winScroll > heightToHideFrom) {
+       isVisible &&      // to limit setting state only the first time
+         setIsVisible(false);
+    } else {
+         setIsVisible(true);
+    }
+  };
   return (
     <div>
       <audio id="idAudio">
@@ -194,7 +210,7 @@ export function Cover() {
                 <div className="card-content">
                   <div className="date">
                     <h4>Mei</h4>
-                    <h4>12</h4>
+                    <h4>14</h4>
                     <h4>2023</h4>
                   </div>
                   <div className="time">
@@ -241,6 +257,10 @@ export function Cover() {
         <img src={flower2} className="img-bottom" />
         <img src={flower3} className="img-bottom" />
       </div>
+      {
+  isVisible
+      &&
+
         <div id="section-1">
           <div className="content">
             <div className="border">
@@ -276,6 +296,7 @@ export function Cover() {
             </div>
           </div>
         </div>
+      }
 
       <div id="section-2">
         <div className="content">
