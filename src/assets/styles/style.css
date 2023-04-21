@@ -351,9 +351,12 @@ img:nth-child(5).flower-cover {
   max-height: 95vh;
   padding: 4vh 5vw 0vh;
   text-align: center;
+  
 }
 #section-1 .content .border {
   /* margin: 15px; */
+  display: flex;
+  justify-content: center;
   border: 0.01px solid var(--color-4);
   text-align: center;
   position: relative;
@@ -383,6 +386,7 @@ img:nth-child(5).flower-cover {
 }
 #section-1 .image-countdown img {
   width: 90vw;
+  height: 125vw;
 }
 
 #section-1 .image-countdown .countdown {
@@ -685,11 +689,13 @@ img:nth-child(5).flower-cover {
 }
 #section-4 .title .flower1 {
   width: 120px;
+  height: 120px;
   z-index: 22;
 }
 #section-4 .title .flower2 {
   margin-top: -80px;
   height: 8em;
+  width: 5em;
   z-index: 22;
 }
 
@@ -1274,16 +1280,9 @@ img:nth-child(5).flower-cover {
   }
   #section-1 .image-countdown img {
     width: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 65vh;
   }
 
-  #section-1 .image-countdown .countdown {
-    bottom: -8em;
-    padding: 1em 3em 2em;
-    border-radius: 15px;
-  }
   #section-1 .countdown .time {
     margin-top: 2em;
   }

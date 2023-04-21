@@ -244,6 +244,7 @@ export function Cover() {
         <div id="section-1">
           <div className="content">
             <div className="border">
+            <div>
               <h5 data-aos="fade-up">The Wedding of</h5>
               <div className="name">
                 <h1 data-aos="fade-up">
@@ -270,6 +271,8 @@ export function Cover() {
                   </div>
                 </div>
               </div>
+            </div>
+              
               <div className="image-countdown">
                 <img src={bridegroom} width="190px" height="auto" />
               </div>
