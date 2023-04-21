@@ -8,15 +8,15 @@ import flower3 from "../assets/images/flower-3.png";
 import bridegroom from "../assets/images/bridegroom.png";
 import man from "../assets/images/man.png";
 import woman from "../assets/images/woman.png";
-import flowerWoman from "../assets/images/flower-woman.svg";
-import flowerMan from "../assets/images/flower-man.svg";
-import img1 from "../assets/images/IMG_1.svg";
-import img2 from "../assets/images/IMG_2.svg";
-import img3 from "../assets/images/IMG_3.svg";
-import img4 from "../assets/images/IMG_4.svg";
-import img5 from "../assets/images/IMG_5.svg";
-import img6 from "../assets/images/IMG_6.svg";
-import img7 from "../assets/images/IMG_7.svg";
+import flowerWoman from "../assets/images/flower-woman.png";
+import flowerMan from "../assets/images/flower-man.png";
+import img1 from "../assets/images/IMG_1.png";
+import img2 from "../assets/images/IMG_2.png";
+import img3 from "../assets/images/IMG_3.png";
+import img4 from "../assets/images/IMG_4.png";
+import img5 from "../assets/images/IMG_5.png";
+import img6 from "../assets/images/IMG_6.png";
+import img7 from "../assets/images/IMG_7.png";
 import music from "../assets/music/song.mp3";
 import { useState, useEffect, useRef } from "react";
 import AOS from "aos";
@@ -153,25 +153,6 @@ export function Cover() {
     setBank("Ardilla Ika Putri (BCA)")
   }, []);
 
-  const [isVisible, setIsVisible] = useState(true);
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () =>
-       window.removeEventListener("scroll", listenToScroll);
-  }, [])
-  const listenToScroll = () => {
-    let heightToHideFrom = 1000;
-    const winScroll = document.body.scrollTop ||
-        document.documentElement.scrollTop;
-  
-    if (winScroll > heightToHideFrom) {
-       isVisible &&      // to limit setting state only the first time
-         setIsVisible(false);
-    } else {
-         setIsVisible(true);
-    }
-  };
-  console.log(bank)
   return (
     <div>
       <audio id="idAudio">
@@ -225,7 +206,7 @@ export function Cover() {
             <div className="for">
               <h4>Kepada Yth:</h4>
               <h6>Bapak / Ibu / Saudara (i)</h6>
-              <h2 data-aos="fade-up">{tamu}</h2>
+              <h2 >{tamu}</h2>
             </div>
     
             <button className="golden-btn" onClick={() => {setCover(false); x.play(); }}>
@@ -259,9 +240,6 @@ export function Cover() {
         <img src={flower2} className="img-bottom" />
         <img src={flower3} className="img-bottom" />
       </div>
-      {
-  isVisible
-      &&
 
         <div id="section-1">
           <div className="content">
@@ -298,14 +276,13 @@ export function Cover() {
             </div>
           </div>
         </div>
-      }
 
       <div id="section-2">
         <div className="content">
           <div className="border">
             <p>Maha suci Allah, yang telah menciptakan makhluknya berpasang-pasangan.Ya Allah semoga Ridho-Mu tercurah mengiringi pernikahan kami</p>
             <div className="bingkai">
-              <div >
+              <div data-aos="fade-up-right">
                 <div className="bg-image-bridegroom man">
                   <div className="man-card">
                     <img src={flowerMan} className="flower-man" />
@@ -319,7 +296,7 @@ export function Cover() {
               </div>
 
               <h3>&</h3>
-              <div >
+              <div data-aos="fade-down-left">
                 <div className="bg-image-bridegroom woman">
                   <div className="woman-card">
                     <img src={flowerWoman} className="flower-woman" />

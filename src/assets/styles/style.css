@@ -341,16 +341,14 @@ img:nth-child(5).flower-cover {
 }
 
 #section-1 {
-  background-image: url(../images/bg-white.svg);
+  background-image: url(../images/bg-white.png);
   background-size: cover;
   background-position: center;
   width: 100vw;
-  position: fixed;
-  overflow: hidden;
 }
 #section-1 .content {
   max-width: 100vw;
-  min-height: 100vh;
+  max-height: 95vh;
   padding: 4vh 5vw 0vh;
   text-align: center;
 }
@@ -358,6 +356,7 @@ img:nth-child(5).flower-cover {
   /* margin: 15px; */
   border: 0.01px solid var(--color-4);
   text-align: center;
+  position: relative;
   border-radius: 50pc;
   height: 100vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 40px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
@@ -377,13 +376,13 @@ img:nth-child(5).flower-cover {
 #section-1 .image-countdown {
   display: flex;
   justify-content: center;
-  position: relative;
+  position: absolute;
   text-align: center;
+  bottom: -20px;
+
 }
 #section-1 .image-countdown img {
   width: 90vw;
-  position: absolute;
-  bottom: -70vh;
 }
 
 #section-1 .image-countdown .countdown {
@@ -427,7 +426,6 @@ img:nth-child(5).flower-cover {
   background-position: center;
   position: relative;
   overflow: hidden;
-  margin-top: 100vh;
   background-color: var(--color-1);
   background-image: linear-gradient(240deg, var(--color-2), var(--color-1), var(--color-2));
 }
@@ -514,10 +512,9 @@ img:nth-child(5).flower-cover {
 #section-3 {
   background-size: cover;
   background-position: center;
-  position: relative;
   overflow: hidden;
   margin-top: -1px;
-  border: none;
+  background-color: var(--color-2);
   background-image: linear-gradient(190deg, var(--color-1), var(--color-3), var(--color-2), var(--color-1));
 }
 #section-3 .content {
@@ -872,7 +869,7 @@ img:nth-child(5).flower-cover {
 }
 
 #section-6 {
-  background-image: url(../images/bg-white.svg);
+  background-image: url(../images/bg-white.png);
   background-size: cover;
   position: relative;
   overflow: hidden;
