@@ -372,7 +372,7 @@ export function Cover() {
                       href="https://goo.gl/maps/VmA5kosqK3t9ByRV9"
                     >
                       <button className="button-calendar" type="button">
-                        Open Map
+                        Buka Map
                       </button>
                     </a>
                     <a
@@ -415,7 +415,7 @@ export function Cover() {
                       href="https://goo.gl/maps/ZUgFrwsV1HZzYuua7"
                     >
                       <button className="button-calendar" type="button">
-                        Open Map
+                        Buka Map
                       </button>
                     </a>
                     <a
