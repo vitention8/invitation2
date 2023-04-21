@@ -345,13 +345,13 @@ img:nth-child(5).flower-cover {
   background-size: cover;
   background-position: center;
   width: 100vw;
+  position: fixed;
 }
 #section-1 .content {
   max-width: 100vw;
   max-height: 95vh;
   padding: 4vh 5vw 0vh;
   text-align: center;
-  
 }
 #section-1 .content .border {
   /* margin: 15px; */
@@ -382,7 +382,6 @@ img:nth-child(5).flower-cover {
   position: absolute;
   text-align: center;
   bottom: -20px;
-
 }
 #section-1 .image-countdown img {
   width: 90vw;
@@ -426,6 +425,7 @@ img:nth-child(5).flower-cover {
 }
 
 #section-2 {
+  margin-top: 100vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -516,9 +516,9 @@ img:nth-child(5).flower-cover {
 #section-3 {
   background-size: cover;
   background-position: center;
+  position: relative;
   overflow: hidden;
-  margin-top: -1px;
-  background-color: var(--color-2);
+  background-color: var(--color-1);
   background-image: linear-gradient(190deg, var(--color-1), var(--color-3), var(--color-2), var(--color-1));
 }
 #section-3 .content {
@@ -527,6 +527,7 @@ img:nth-child(5).flower-cover {
   padding: 2em 0.5em 2em;
   margin: 0 1.5em;
   border: none;
+  background-image: linear-gradient(190deg, var(--color-1), var(--color-3), var(--color-2), var(--color-1));
 }
 #section-3 .content .line {
   /* border: 2px solid var(--color-3); */
@@ -1167,7 +1168,6 @@ img:nth-child(5).flower-cover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
