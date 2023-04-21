@@ -184,7 +184,7 @@ export function Cover() {
                     <h4>2023</h4>
                   </div>
                   <div className="time">
-                    <h4> 09.00 - Selesai</h4>
+                    <h4> 13.00 - Selesai</h4>
                   </div>
                 </div>
               </div>
@@ -355,7 +355,7 @@ export function Cover() {
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faClock} className="icon-event" />
-                    <p>13.30 WIB s/d Selesai</p>
+                    <p>13.00 WIB s/d Selesai</p>
                   </li>
                   <li>
                     <FontAwesomeIcon icon={faLocationDot} className="icon-event" />
